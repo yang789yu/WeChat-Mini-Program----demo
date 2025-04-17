@@ -1,15 +1,61 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/component/index",
+    "pages/animation/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTextStyle": "@navigationBarTextStyle",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
+    "backgroundColor": "@backgroundColor"
   },
+  "tabBar": {
+    "color": "@tabBarColor",
+    "selectedColor": "@tabBarSelectedColor",
+    "borderStyle": "@tabBarBorderStyle",
+    "backgroundColor": "@tabBarBackgroundColor",
+    "list": [
+      {
+        "pagePath": "pages/component/index",
+        "iconPath": "@iconPathComponent",
+        "selectedIconPath": "@selectedIconPathComponent",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/animation/index",
+        "iconPath": "@iconPathComponent",
+        "selectedIconPath": "@selectedIconPathComponent",
+        "text": "交互动画"
+      }
+    ]
+  },
+  "darkmode": true,
+  "themeLocation": "demo.theme.json",
   "style": "v2",
+  "resizable": true,
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": "latest"
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation",
+    "chooseAddress"
+  ],
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "renderer": "skyline",
   "lazyCodeLoading": "requiredComponents"
 }

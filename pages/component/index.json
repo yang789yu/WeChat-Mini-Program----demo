@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "小程序官方组件展示",
+  "navigationStyle": "custom",
+  "componentFramework": "glass-easel",
+  "renderer": "skyline",
+  "disableScroll": true,
+  "usingComponents": {
+    "mp-navigation-bar": "weui-miniprogram/navigation-bar/navigation-bar"
+  }
+}

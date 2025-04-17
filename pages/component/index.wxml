@@ -1,0 +1,7 @@
+<mp-navigation-bar 
+  title="小程序官方组件"
+  back="{{false}}"
+/>
+<scroll-view scroll-y type="list">
+
+</scroll-view>
